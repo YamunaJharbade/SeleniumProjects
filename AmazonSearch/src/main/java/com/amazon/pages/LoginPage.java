@@ -39,9 +39,9 @@ public class LoginPage extends TestBase {
 			Email.sendKeys("jharbadeyamuna@gmail.com");
 			continuebutton.click();
 			if (Password.isDisplayed()) {
-				Password.sendKeys("blessmegod@1982");
+				Password.sendKeys("");
 				
-				//Password.sendKeys("Ymxlc3NtZWdvZEAxOTgy");
+				//Password.sendKeys("");
 				Thread.sleep(1000);
 				Submit.click();
 			} else {
