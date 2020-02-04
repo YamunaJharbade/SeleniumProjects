@@ -13,7 +13,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import com.amazon.util.TestUtil;
 import com.amazon.util.WebEventListener;
 
-public class TestBase {
+public class TestBase  {
 
 	public static WebDriver driver;
 	public static Properties prop;
@@ -37,10 +37,10 @@ public class TestBase {
 	public static void initialization() {
 		String browsername = prop.getProperty("browser");
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Yamuna Selenium\\AmazonTest\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Yamuna Selenium\\AmazonSearch\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browsername.equals("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Yamuna Selenium\\AmazonTest\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Yamuna Selenium\\AmazonSearch\\Drivers\\geckodriver.exe");
 			driver = new ChromeDriver();
 		}
 		
